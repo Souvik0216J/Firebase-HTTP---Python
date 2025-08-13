@@ -1,0 +1,26 @@
+1.. Firebase Realtime Database can accept HTTP requests directly using its REST API.
+    STEPS:-
+        1. A Firebase project with a Realtime Database set up
+        2. Your database’s URL
+
+    An optional authentication key (if not in public read/write mode)
+
+
+2. Create a Firebase Project
+    STEPS:-
+        1. Click "Add Project", give it a name, and follow the prompts.
+        2. In the left sidebar, go to Build --> Realtime Database.
+        3. Click Create Database.
+        4. Choose location and start in Test mode (no auth required - for development).
+
+
+3. Operations
+    POST --> Creates a new child with a unique key every time.
+    PUT --> Replaces data at the given path.
+    PATCH --> Updates only the given fields without replacing everything.
+    GET --> Reads data from Firebase.
+
+
+8. Security Notes
+    In Test mode, anyone can read/write from database. Use it only for development.
+    For production, switch to locked mode and use Firebase Authentication with an auth token in HTTP requests.
